@@ -1,0 +1,28 @@
+{
+  "name": "japanese-diet-bill-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "roottool",
+    "url": "https://github.com/roottool"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roottool/japanese-diet-bill-viewer.git"
+  },
+  "scripts": {
+    "lint": "run-s -c lint:*",
+    "lint:prettier": "prettier --check .",
+    "lint:tsc": "tsc --noEmit",
+    "fix": "run-s -c fix:*",
+    "fix:prettier": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
