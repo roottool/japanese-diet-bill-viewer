@@ -13,16 +13,57 @@
     "url": "https://github.com/roottool/japanese-diet-bill-viewer.git"
   },
   "scripts": {
+    "prepare": "is-ci || husky install",
+    "clean": "rimraf .next",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "run-s -c lint:*",
     "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint . --color --ext .js,.ts,.tsx",
     "lint:tsc": "tsc --noEmit",
     "fix": "run-s -c fix:*",
-    "fix:prettier": "prettier --cache --write ."
+    "fix:prettier": "prettier --cache --write .",
+    "fix:eslint": "eslint . --fix --color --cache --ext .js,.ts,.tsx"
+  },
+  "lint-staged": {
+    "*.js|tsx?": [
+      "prettier --write",
+      "eslint --fix --color"
+    ],
+    "*.md|json|ya?ml": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "next": "12.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.19.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "@next/eslint-plugin-next": "12.2.0",
+    "@types/node": "18.0.1",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.2.4",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-sort-destructure-keys": "1.4.0",
+    "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "husky": "8.0.1",
+    "is-ci": "3.0.1",
+    "lint-staged": "13.0.3",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.7.4"
   }
 }
