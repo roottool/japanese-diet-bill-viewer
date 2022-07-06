@@ -1,1 +1,1 @@
-# japanese-diet-bill-visualizer
+# The Japanese Diet bill viewer
