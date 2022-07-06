@@ -1,0 +1,6 @@
+[submodule "repositories/representatives"]
+	path = repositories/representatives
+	url = https://github.com/smartnews-smri/house-of-representatives.git
+[submodule "repositories/councillors"]
+	path = repositories/councillors
+	url = https://github.com/smartnews-smri/house-of-councillors.git
