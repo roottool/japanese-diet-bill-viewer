@@ -1,7 +1,7 @@
 {
   "name": "japanese-diet-bill-viewer",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "This viewer visualizes various data on the Japanese Diet bills.",
   "license": "MIT",
   "private": true,
   "author": {
