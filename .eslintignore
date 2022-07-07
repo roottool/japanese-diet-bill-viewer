@@ -9,3 +9,4 @@ coverage/
 
 # assets
 public/
+repositories/**/data/
