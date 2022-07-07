@@ -49,3 +49,5 @@ node_modules/
 
 # production
 /build
+
+style-dictionary/generated/

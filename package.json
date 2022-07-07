@@ -14,9 +14,10 @@
   },
   "scripts": {
     "prepare": "is-ci || husky install",
-    "clean": "rimraf .next",
     "dev": "next dev",
-    "build": "next build",
+    "build": "run-s -c build:*",
+    "build:clean": "rimraf .next",
+    "build:next": "next build",
     "start": "next start",
     "lint": "run-s -c lint:*",
     "lint:prettier": "prettier --check .",
@@ -24,7 +25,15 @@
     "lint:tsc": "tsc --noEmit",
     "fix": "run-s -c fix:*",
     "fix:prettier": "prettier --cache --write .",
-    "fix:eslint": "eslint . --fix --color --cache --ext .js,.ts,.tsx"
+    "fix:eslint": "eslint . --fix --color --cache --ext .js,.ts,.tsx",
+    "token": "npm-run-all -s token:clean -p token:generate-light token:generate-dark",
+    "token:clean": "rimraf style-dictionary/generated src/styles/tokens",
+    "token:generate-light": "run-s token:light::*",
+    "token:light::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/light.json global,light,theme global",
+    "token:light::build": "style-dictionary build --config style-dictionary/light.config.js",
+    "token:generate-dark": "run-s token:dark::*",
+    "token:dark::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/dark.json global,dark,theme global",
+    "token:dark::build": "style-dictionary build --config style-dictionary/dark.config.js"
   },
   "lint-staged": {
     "*.js|tsx?": [
@@ -65,6 +74,8 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.24",
     "typescript": "4.7.4"
   }
 }

@@ -6,6 +6,8 @@ coverage/
 
 # build
 .next/
+style-dictionary/generated/
+src/styles/tokens/
 
 # assets
 public/
