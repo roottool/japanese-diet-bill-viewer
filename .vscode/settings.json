@@ -3,10 +3,7 @@
     "**/node_modules/**": true
   },
   // * For Linter and Formatter
-  "editor.codeActionsOnSave": [
-    "source.addMissingImports",
-    "source.fixAll.eslint"
-  ],
+  "editor.codeActionsOnSave": ["source.addMissingImports", "source.fixAll.eslint"],
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSaveMode": "modificationsIfAvailable",
@@ -29,13 +26,5 @@
     },
     "files.trimTrailingWhitespace": false
   },
-  "cSpell.words": [
-    "automerge",
-    "codeql",
-    "eslintcache",
-    "ossf",
-    "sarif",
-    "steamstatic",
-    "tsbuildinfo"
-  ]
+  "cSpell.words": ["automerge", "codeql", "eslintcache", "ossf", "sarif", "steamstatic", "tsbuildinfo"]
 }

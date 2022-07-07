@@ -6,7 +6,7 @@ const config = {
   semi: false,
   singleQuote: true,
   tabWidth: 2,
-  trailingComma: "all",
-};
+  trailingComma: 'all',
+}
 
-module.exports = config;
+module.exports = config
