@@ -26,14 +26,5 @@
     },
     "files.trimTrailingWhitespace": false
   },
-  "cSpell.words": [
-    "automerge",
-    "codeql",
-    "eslintcache",
-    "nextui",
-    "ossf",
-    "sarif",
-    "steamstatic",
-    "tsbuildinfo"
-  ]
+  "cSpell.words": ["automerge", "codeql", "eslintcache", "nextui", "ossf", "sarif", "steamstatic", "tsbuildinfo"]
 }
