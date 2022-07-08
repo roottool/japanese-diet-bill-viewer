@@ -9,11 +9,11 @@ const config = {
       buildPath: 'src/styles/tokens/',
       files: [
         {
-          format: 'javascript/es6',
+          format: 'javascript/module',
           destination: 'lightTokens.js',
         },
         {
-          format: 'typescript/es6-declarations',
+          format: 'typescript/module-declarations',
           destination: 'lightTokens.d.ts',
         },
       ],
