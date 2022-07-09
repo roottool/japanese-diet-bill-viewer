@@ -1,18 +1,18 @@
 /**
  * Do not edit directly
- * Generated on Fri, 08 Jul 2022 00:20:45 GMT
+ * Generated on Sat, 09 Jul 2022 07:10:01 GMT
  */
 
 module.exports = {
   "button": {
     "primary": {
       "background": {
-        "value": "#7f9cf5",
+        "value": "#FFD1ED",
         "type": "color",
         "filePath": "style-dictionary/generated/light.json",
         "isSource": true,
         "original": {
-          "value": "#7f9cf5",
+          "value": "#FFD1ED",
           "type": "color"
         },
         "name": "ButtonPrimaryBackground",
@@ -190,57 +190,286 @@ module.exports = {
   },
   "boxShadow": {
     "default": {
-      "value": [
-        {
-          "x": 5,
-          "y": 5,
-          "spread": 3,
-          "color": "#1a202c26",
-          "blur": 5,
-          "type": "dropShadow"
-        },
-        {
-          "x": 4,
-          "y": 4,
-          "spread": 6,
-          "color": "#00000033",
-          "blur": 5,
-          "type": "innerShadow"
-        }
-      ],
-      "type": "boxShadow",
-      "filePath": "style-dictionary/generated/light.json",
-      "isSource": true,
-      "original": {
-        "value": [
-          {
-            "x": 5,
-            "y": 5,
-            "spread": 3,
-            "color": "#1a202c26",
-            "blur": 5,
-            "type": "dropShadow"
+      "0": {
+        "x": {
+          "value": 5,
+          "type": "x",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 5,
+            "type": "x"
           },
-          {
-            "x": 4,
-            "y": 4,
-            "spread": 6,
-            "color": "#00000033",
-            "blur": 5,
-            "type": "innerShadow"
-          }
-        ],
-        "type": "boxShadow"
+          "name": "BoxShadowDefault0X",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "0",
+            "subitem": "x"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "0",
+            "x"
+          ]
+        },
+        "y": {
+          "value": 5,
+          "type": "y",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 5,
+            "type": "y"
+          },
+          "name": "BoxShadowDefault0Y",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "0",
+            "subitem": "y"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "0",
+            "y"
+          ]
+        },
+        "spread": {
+          "value": 3,
+          "type": "spread",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 3,
+            "type": "spread"
+          },
+          "name": "BoxShadowDefault0Spread",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "0",
+            "subitem": "spread"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "0",
+            "spread"
+          ]
+        },
+        "color": {
+          "value": "#13311d26",
+          "type": "color",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": "#13311d26",
+            "type": "color"
+          },
+          "name": "BoxShadowDefault0Color",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "0",
+            "subitem": "color"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "0",
+            "color"
+          ]
+        },
+        "blur": {
+          "value": 5,
+          "type": "blur",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 5,
+            "type": "blur"
+          },
+          "name": "BoxShadowDefault0Blur",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "0",
+            "subitem": "blur"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "0",
+            "blur"
+          ]
+        },
+        "type": {
+          "value": "dropShadow",
+          "type": "type",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": "dropShadow",
+            "type": "type"
+          },
+          "name": "BoxShadowDefault0Type",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "0",
+            "subitem": "type"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "0",
+            "type"
+          ]
+        }
       },
-      "name": "BoxShadowDefault",
-      "attributes": {
-        "category": "boxShadow",
-        "type": "default"
-      },
-      "path": [
-        "boxShadow",
-        "default"
-      ]
+      "1": {
+        "x": {
+          "value": 4,
+          "type": "x",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 4,
+            "type": "x"
+          },
+          "name": "BoxShadowDefault1X",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "1",
+            "subitem": "x"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "1",
+            "x"
+          ]
+        },
+        "y": {
+          "value": 4,
+          "type": "y",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 4,
+            "type": "y"
+          },
+          "name": "BoxShadowDefault1Y",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "1",
+            "subitem": "y"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "1",
+            "y"
+          ]
+        },
+        "spread": {
+          "value": 6,
+          "type": "spread",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 6,
+            "type": "spread"
+          },
+          "name": "BoxShadowDefault1Spread",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "1",
+            "subitem": "spread"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "1",
+            "spread"
+          ]
+        },
+        "color": {
+          "value": "#00000033",
+          "type": "color",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": "#00000033",
+            "type": "color"
+          },
+          "name": "BoxShadowDefault1Color",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "1",
+            "subitem": "color"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "1",
+            "color"
+          ]
+        },
+        "blur": {
+          "value": 5,
+          "type": "blur",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": 5,
+            "type": "blur"
+          },
+          "name": "BoxShadowDefault1Blur",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "1",
+            "subitem": "blur"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "1",
+            "blur"
+          ]
+        },
+        "type": {
+          "value": "innerShadow",
+          "type": "type",
+          "filePath": "style-dictionary/generated/light.json",
+          "isSource": true,
+          "original": {
+            "value": "innerShadow",
+            "type": "type"
+          },
+          "name": "BoxShadowDefault1Type",
+          "attributes": {
+            "category": "boxShadow",
+            "type": "default",
+            "item": "1",
+            "subitem": "type"
+          },
+          "path": [
+            "boxShadow",
+            "default",
+            "1",
+            "type"
+          ]
+        }
+      }
     }
   },
   "fg": {
@@ -264,12 +493,12 @@ module.exports = {
       ]
     },
     "muted": {
-      "value": "#4a5568",
+      "value": "#324A36",
       "type": "color",
       "filePath": "style-dictionary/generated/light.json",
       "isSource": true,
       "original": {
-        "value": "#4a5568",
+        "value": "#324A36",
         "type": "color"
       },
       "name": "FgMuted",
@@ -283,12 +512,12 @@ module.exports = {
       ]
     },
     "subtle": {
-      "value": "#a0aec0",
+      "value": "#656765",
       "type": "color",
       "filePath": "style-dictionary/generated/light.json",
       "isSource": true,
       "original": {
-        "value": "#a0aec0",
+        "value": "#656765",
         "type": "color"
       },
       "name": "FgSubtle",
@@ -323,12 +552,12 @@ module.exports = {
       ]
     },
     "muted": {
-      "value": "#f7fafc",
+      "value": "#F6F7F6",
       "type": "color",
       "filePath": "style-dictionary/generated/light.json",
       "isSource": true,
       "original": {
-        "value": "#f7fafc",
+        "value": "#F6F7F6",
         "type": "color"
       },
       "name": "BgMuted",
@@ -342,12 +571,12 @@ module.exports = {
       ]
     },
     "subtle": {
-      "value": "#edf2f7",
+      "value": "#EEEFED",
       "type": "color",
       "filePath": "style-dictionary/generated/light.json",
       "isSource": true,
       "original": {
-        "value": "#edf2f7",
+        "value": "#EEEFED",
         "type": "color"
       },
       "name": "BgSubtle",
@@ -363,12 +592,12 @@ module.exports = {
   },
   "accent": {
     "default": {
-      "value": "#7f9cf5",
+      "value": "#FFD1ED",
       "type": "color",
       "filePath": "style-dictionary/generated/light.json",
       "isSource": true,
       "original": {
-        "value": "#7f9cf5",
+        "value": "#FFD1ED",
         "type": "color"
       },
       "name": "AccentDefault",
@@ -384,12 +613,12 @@ module.exports = {
   },
   "shadows": {
     "default": {
-      "value": "#1a202c",
+      "value": "#13311D",
       "type": "color",
       "filePath": "style-dictionary/generated/light.json",
       "isSource": true,
       "original": {
-        "value": "#1a202c",
+        "value": "#13311D",
         "type": "color"
       },
       "name": "ShadowsDefault",

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 08 Jul 2022 00:20:45 GMT
+ * Generated on Sat, 09 Jul 2022 07:10:01 GMT
  */
 
 export default tokens;
@@ -49,7 +49,24 @@ declare const tokens: {
     }
   },
   "boxShadow": {
-    "default": DesignToken
+    "default": {
+      "0": {
+        "x": DesignToken,
+        "y": DesignToken,
+        "spread": DesignToken,
+        "color": DesignToken,
+        "blur": DesignToken,
+        "type": DesignToken
+      },
+      "1": {
+        "x": DesignToken,
+        "y": DesignToken,
+        "spread": DesignToken,
+        "color": DesignToken,
+        "blur": DesignToken,
+        "type": DesignToken
+      }
+    }
   },
   "fg": {
     "default": DesignToken,
