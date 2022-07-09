@@ -11,7 +11,9 @@ import { Children } from 'react'
 
 const { flush } = CssBaseline
 class Document extends NextDocument {
-  static override async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+  static override async getInitialProps(
+    ctx: DocumentContext,
+  ): Promise<DocumentInitialProps> {
     const initialProps = await NextDocument.getInitialProps(ctx)
     return {
       ...initialProps,

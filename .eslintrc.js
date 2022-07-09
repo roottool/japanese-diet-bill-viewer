@@ -61,7 +61,14 @@ const config = {
         alphabetize: {
           order: 'asc',
         },
-        groups: ['builtin', 'external', 'internal', ['sibling', 'parent'], 'index', 'object'],
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['sibling', 'parent'],
+          'index',
+          'object',
+        ],
         'newlines-between': 'always',
       },
     ],
