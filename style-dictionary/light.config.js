@@ -1,22 +1,13 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 // @ts-check
 
-const { fileHeader } = require('style-dictionary').formatHelpers
+const formatToCustomNextuiTokens = require('./customNextuiFormat')
 
 /** @type {import('style-dictionary').Config} */
 const config = {
   source: ['style-dictionary/generated/light.json'],
   format: {
-    myFormat: ({ dictionary, file }) => {
-      const lightTokenEntries = dictionary.allTokens.map((token) => [
-        token.name,
-        token.value,
-      ])
-      console.log(lightTokenEntries)
-      const lightTokens = Object.fromEntries(lightTokenEntries)
-      return `${fileHeader({ file })}const lightTokens = ${lightTokens}
-export default lightTokens`
-    },
+    customNextuiFormat: ({ dictionary, file }) =>
+      formatToCustomNextuiTokens(dictionary, file),
   },
   platforms: {
     ts: {
@@ -24,7 +15,7 @@ export default lightTokens`
       buildPath: 'src/styles/tokens/',
       files: [
         {
-          format: 'myFormat',
+          format: 'customNextuiFormat',
           destination: 'lightTokens.ts',
         },
       ],
