@@ -5,7 +5,9 @@ import lightTokens from '@/styles/tokens/lightTokens'
 
 export const lightTheme = createTheme({
   type: 'light',
-  ...lightTokens,
+  theme: {
+    ...lightTokens,
+  },
 })
 
 export const darkTheme = createTheme({
