@@ -30,9 +30,9 @@
     "token:clean": "rimraf style-dictionary/generated src/styles/tokens",
     "token:light": "run-s token:light::transform token:light::build",
     "token:dark": "run-s token:dark::transform token:dark::build",
-    "token:light::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/light.json global,light,theme global",
+    "token:light::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/light.json global,nextuiLight global",
     "token:light::build": "style-dictionary build --config style-dictionary/light.config.js",
-    "token:dark::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/dark.json global,dark,theme global",
+    "token:dark::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/dark.json global,nextuiDark global",
     "token:dark::build": "style-dictionary build --config style-dictionary/dark.config.js"
   },
   "lint-staged": {
