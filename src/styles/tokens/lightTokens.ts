@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 10 Jul 2022 16:59:43 GMT
+ * Generated on Sun, 10 Jul 2022 19:37:04 GMT
  */
 
 const tokens = {
@@ -58,7 +58,7 @@ const tokens = {
     "errorSolidContrast": "#080808",
     "errorShadow": "#DB6251",
     "gradient": "linear-gradient(112deg, #FFF0E2 -25%, #F9CD1D -10%, #FFC2ED 80%)",
-    "link": "#4BD6ED"
+    "link": "#0E8EC2"
   }
 } as const
 
