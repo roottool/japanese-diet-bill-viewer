@@ -1,7 +1,65 @@
 /**
  * Do not edit directly
- * Generated on Sun, 10 Jul 2022 09:31:27 GMT
+ * Generated on Sun, 10 Jul 2022 16:59:43 GMT
  */
 
-const lightTokens = [object Object]
-export default lightTokens
+const tokens = {
+  "colors": {
+    "background": "#f3f3f2",
+    "foreground": "#080808",
+    "primaryLight": "#FFE6F0",
+    "primaryLightHover": "#FFDAED",
+    "primaryLightActive": "#FFD1ED",
+    "primaryLightContrast": "#DB8DCC",
+    "primary": "#FFC2ED",
+    "primaryBorder": "#DB8DCC",
+    "primaryBorderHover": "#B761AF",
+    "primarySolidHover": "#933D93",
+    "primarySolidContrast": "#080808",
+    "primaryShadow": "#DB8DCC",
+    "secondaryLight": "#A0FCFB",
+    "secondaryLightHover": "#6FEDF6",
+    "secondaryLightActive": "#4BD6ED",
+    "secondaryLightContrast": "#0E8EC2",
+    "secondary": "#14B6E2",
+    "secondaryBorder": "#0E8EC2",
+    "secondaryBorderHover": "#0A6BA2",
+    "secondarySolidHover": "#064D83",
+    "secondarySolidContrast": "#080808",
+    "secondaryShadow": "#0E8EC2",
+    "successLight": "#E6F9A0",
+    "successLightHover": "#CEED6E",
+    "successLightActive": "#B3DB48",
+    "successLightContrast": "#75A80F",
+    "success": "#8FC415",
+    "successBorder": "#75A80F",
+    "successBorderHover": "#5D8D0A",
+    "successSolidHover": "#477106",
+    "successSolidContrast": "#080808",
+    "successShadow": "#75A80F",
+    "warningLight": "#FEF2A4",
+    "warningLightHover": "#FDE776",
+    "warningLightActive": "#FBDD54",
+    "warningLightContrast": "#D6AB15",
+    "warning": "#F9CD1D",
+    "warningBorder": "#D6AB15",
+    "warningBorderHover": "#B38B0E",
+    "warningSolidHover": "#906C09",
+    "warningSolidContrast": "#080808",
+    "warningShadow": "#D6AB15",
+    "errorLight": "#FFDDC5",
+    "errorLightHover": "#FFC6A9",
+    "errorLightActive": "#FFB093",
+    "errorLightContrast": "#DB6251",
+    "error": "#FF8C70",
+    "errorBorder": "#DB6251",
+    "errorBorderHover": "#B73E38",
+    "errorSolidHover": "#932326",
+    "errorSolidContrast": "#080808",
+    "errorShadow": "#DB6251",
+    "gradient": "linear-gradient(112deg, #FFF0E2 -25%, #F9CD1D -10%, #FFC2ED 80%)",
+    "link": "#4BD6ED"
+  }
+} as const
+
+export default tokens

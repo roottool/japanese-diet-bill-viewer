@@ -1,0 +1,65 @@
+/**
+ * Do not edit directly
+ * Generated on Sun, 10 Jul 2022 16:59:43 GMT
+ */
+
+const tokens = {
+  "colors": {
+    "background": "#080808",
+    "foreground": "#f3f3f2",
+    "primaryDark": "#933D93",
+    "primaryDarkHover": "#B761AF",
+    "primaryDarkActive": "#DB8DCC",
+    "primaryDarkContrast": "#FFD1ED",
+    "primary": "#FFC2ED",
+    "primaryBorder": "#FFD1ED",
+    "primaryBorderHover": "#FFDAED",
+    "primarySolidHover": "#FFE6F0",
+    "primarySolidContrast": "#f3f3f2",
+    "primaryShadow": "#FFD1ED",
+    "secondaryDark": "#064D83",
+    "secondaryDarkHover": "#0A6BA2",
+    "secondaryDarkActive": "#0E8EC2",
+    "secondaryDarkContrast": "#4BD6ED",
+    "secondary": "#14B6E2",
+    "secondaryBorder": "#4BD6ED",
+    "secondaryBorderHover": "#6FEDF6",
+    "secondarySolidHover": "#A0FCFB",
+    "secondarySolidContrast": "#f3f3f2",
+    "secondaryShadow": "#4BD6ED",
+    "successDark": "#477106",
+    "successDarkHover": "#5D8D0A",
+    "successDarkActive": "#75A80F",
+    "successDarkContrast": "#B3DB48",
+    "success": "#8FC415",
+    "successBorder": "#B3DB48",
+    "successBorderHover": "#CEED6E",
+    "successSolidHover": "#E6F9A0",
+    "successSolidContrast": "#f3f3f2",
+    "successShadow": "#B3DB48",
+    "warningDark": "#906C09",
+    "warningDarkHover": "#B38B0E",
+    "warningDarkActive": "#D6AB15",
+    "warningDarkContrast": "#FBDD54",
+    "warning": "#F9CD1D",
+    "warningBorder": "#FBDD54",
+    "warningBorderHover": "#FDE776",
+    "warningSolidHover": "#FEF2A4",
+    "warningSolidContrast": "#f3f3f2",
+    "warningShadow": "#FBDD54",
+    "errorDark": "#932326",
+    "errorDarkHover": "#B73E38",
+    "errorDarkActive": "#DB6251",
+    "errorDarkContrast": "#FFB093",
+    "error": "#FF8C70",
+    "errorBorder": "#FFB093",
+    "errorBorderHover": "#FFC6A9",
+    "errorSolidHover": "#FFDDC5",
+    "errorSolidContrast": "#f3f3f2",
+    "errorShadow": "#FFB093",
+    "gradient": "linear-gradient(112deg, #FFF0E2 -25%, #F9CD1D -10%, #FFC2ED 80%)",
+    "link": "#0E8EC2"
+  }
+} as const
+
+export default tokens
