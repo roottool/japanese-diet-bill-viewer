@@ -1,0 +1,65 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 12 Jul 2022 00:26:05 GMT
+ */
+
+const tokens = {
+  "colors": {
+    "background": "#f3f3f2",
+    "foreground": "#080808",
+    "primaryLight": "#FCBCCA",
+    "primaryLightHover": "#F698B7",
+    "primaryLightActive": "#ED7CAC",
+    "primaryLightContrast": "#E2539E",
+    "primary": "#E2539E",
+    "primaryBorder": "#C23C90",
+    "primaryBorderHover": "#A22981",
+    "primarySolidHover": "#831A70",
+    "primarySolidContrast": "#f3f3f2",
+    "primaryShadow": "#C23C90",
+    "secondaryLight": "#A6FDF1",
+    "secondaryLightHover": "#79F9F2",
+    "secondaryLightActive": "#58F0F4",
+    "secondaryLightContrast": "#23D8ED",
+    "secondary": "#23D8ED",
+    "secondaryBorder": "#19AACB",
+    "secondaryBorderHover": "#1182AA",
+    "secondarySolidHover": "#0B5D89",
+    "secondarySolidContrast": "#f3f3f2",
+    "secondaryShadow": "#19AACB",
+    "successLight": "#E2FB9F",
+    "successLightHover": "#CAF46E",
+    "successLightActive": "#B1EA49",
+    "successLightContrast": "#8DDD13",
+    "success": "#8DDD13",
+    "successBorder": "#71BE0D",
+    "successBorderHover": "#579F09",
+    "successSolidHover": "#418006",
+    "successSolidContrast": "#f3f3f2",
+    "successShadow": "#71BE0D",
+    "warningLight": "#FAEDAB",
+    "warningLightHover": "#F2DD7F",
+    "warningLightActive": "#E6C95D",
+    "warningLightContrast": "#D6AE2C",
+    "warning": "#D6AE2C",
+    "warningBorder": "#B89020",
+    "warningBorderHover": "#9A7416",
+    "warningSolidHover": "#7C5A0E",
+    "warningSolidContrast": "#f3f3f2",
+    "warningShadow": "#B89020",
+    "errorLight": "#FFCCAC",
+    "errorLightHover": "#FFAA82",
+    "errorLightActive": "#FF8963",
+    "errorLightContrast": "#FF5230",
+    "error": "#FF5230",
+    "errorBorder": "#DB3323",
+    "errorBorderHover": "#B71918",
+    "errorSolidHover": "#930F18",
+    "errorSolidContrast": "#f3f3f2",
+    "errorShadow": "#DB3323",
+    "gradient": "linear-gradient(112deg, #FFE9D5 -25%, #D6AE2C -10%, #E2539E 80%)",
+    "link": "#1182AA"
+  }
+} as const
+
+export default tokens

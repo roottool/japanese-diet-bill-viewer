@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2018",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
@@ -32,20 +28,10 @@
     "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "$/*": [
-        "public/*"
-      ]
+      "@/*": ["src/*"],
+      "$/*": ["public/*"]
     }
   },
-  "include": [
-    "src",
-    "next-env.d.ts"
-  ],
-  "exclude": [
-    ".next",
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [".next", "node_modules"]
 }

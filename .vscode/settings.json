@@ -33,6 +33,7 @@
     "automerge",
     "codeql",
     "eslintcache",
+    "nextui",
     "ossf",
     "sarif",
     "steamstatic",

@@ -61,7 +61,14 @@ const config = {
         alphabetize: {
           order: 'asc',
         },
-        groups: ['builtin', 'external', 'internal', ['sibling', 'parent'], 'index', 'object'],
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['sibling', 'parent'],
+          'index',
+          'object',
+        ],
         'newlines-between': 'always',
       },
     ],
@@ -96,6 +103,14 @@ const config = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['style-dictionary/**/*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 }
 
 module.exports = config
