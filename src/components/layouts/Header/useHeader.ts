@@ -4,11 +4,13 @@ import { useCallback } from 'react'
 import { useAppTheme } from '@/hooks/useAppTheme'
 
 export const useHeader = () => {
-  const { isDarkMode, setAppTheme } = useAppTheme()
-  const handleAppThemeTypeSwitchClick = useCallback(
-    (event: SwitchEvent) =>
-      setAppTheme(event.target.checked ? 'dark' : 'light'),
-    [setAppTheme],
+  const { isDarkMode, toggleAppTheme } = useAppTheme()
+  const handleAppThemeSwitchPress = useCallback(
+    (event: SwitchEvent) => {
+      const themeType = event.target.checked ? 'dark' : 'light'
+      toggleAppTheme(themeType)
+    },
+    [toggleAppTheme],
   )
-  return { isDarkMode, handleAppThemeTypeSwitchClick }
+  return { isDarkMode, handleAppThemeSwitchPress }
 }

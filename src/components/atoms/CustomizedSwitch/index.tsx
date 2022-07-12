@@ -5,7 +5,6 @@ type CustomizedSwitchProps = PropsWithoutRef<Partial<SwitchProps>>
 const CustomizedSwitch = (props: CustomizedSwitchProps) => (
   <Switch
     {...props}
-    shadow
     css={{
       '& > *': {
         backgroundColor: '$primaryLightActive',
