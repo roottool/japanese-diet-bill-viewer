@@ -1,9 +1,9 @@
 import type { SwitchEvent } from '@nextui-org/react'
 import { useCallback } from 'react'
 
-import { useAppTheme } from '@/hooks/useAppTheme'
+import useAppTheme from '@/hooks/useAppTheme'
 
-export const useHeader = () => {
+const useHeader = () => {
   const { isDarkMode, toggleAppTheme } = useAppTheme()
   const handleAppThemeSwitchPress = useCallback(
     (event: SwitchEvent) => {
@@ -14,3 +14,5 @@ export const useHeader = () => {
   )
   return { isDarkMode, handleAppThemeSwitchPress }
 }
+
+export default useHeader

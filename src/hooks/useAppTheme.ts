@@ -2,7 +2,7 @@ import { type ThemeType, useTheme } from '@nextui-org/react'
 import { useTheme as useNextTheme } from 'next-themes'
 import { useCallback } from 'react'
 
-export const useAppTheme = () => {
+const useAppTheme = () => {
   const { setTheme } = useNextTheme()
   const { isDark, type } = useTheme()
 
@@ -17,3 +17,5 @@ export const useAppTheme = () => {
     toggleAppTheme,
   }
 }
+
+export default useAppTheme

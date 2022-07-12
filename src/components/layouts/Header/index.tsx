@@ -1,6 +1,5 @@
-import { useHeader } from '@/components/layouts/Header/useHeader'
-
 import PresentationalHeader from './Presenter'
+import useHeader from './useHeader'
 
 const Header = () => {
   const { ...props } = useHeader()
