@@ -36,11 +36,11 @@
     "token:dark::build": "style-dictionary build --config style-dictionary/dark.config.js"
   },
   "lint-staged": {
-    "*.js|tsx?": [
+    "*.{js,ts?(x)}": [
       "prettier --write",
       "eslint --fix --color"
     ],
-    "*.md|json|ya?ml": [
+    "*.{md,json,y?(a)ml}": [
       "prettier --write"
     ]
   },
