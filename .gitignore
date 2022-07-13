@@ -43,6 +43,12 @@ node_modules/
 # vercel
 .vercel
 
+# turbo
+.turbo
+
+# SWC cache
+.swc
+
 # Next.js build output
 .next
 /out/

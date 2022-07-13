@@ -1,0 +1,44 @@
+{
+  "name": "workers",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "roottool",
+    "url": "https://github.com/roottool"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roottool/japanese-diet-bill-viewer.git"
+  },
+  "lint-staged": {
+    "*.{js,ts?(x)}": [
+      "prettier --write",
+      "eslint --fix --color"
+    ],
+    "*.{md,json,y?(a)ml}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@prisma/client": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.3",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.2.5",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-sort-destructure-keys": "1.4.0",
+    "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "lint-staged": "13.0.3",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.7.1",
+    "prisma": "4.0.0",
+    "rimraf": "3.0.2",
+    "typescript": "4.7.4"
+  }
+}
