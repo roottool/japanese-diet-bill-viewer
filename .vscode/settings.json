@@ -29,6 +29,9 @@
     },
     "files.trimTrailingWhitespace": false
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "cSpell.words": [
     "automerge",
     "codeql",
