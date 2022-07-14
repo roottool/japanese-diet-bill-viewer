@@ -14,8 +14,8 @@
     "url": "https://github.com/roottool/japanese-diet-bill-viewer.git"
   },
   "workspaces": [
-    "web/*",
-    "workers/*"
+    "web",
+    "workers"
   ],
   "prisma": {
     "schema": "workers/prisma/schema.prisma",
