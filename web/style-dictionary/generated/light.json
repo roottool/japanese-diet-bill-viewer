@@ -1,0 +1,220 @@
+{
+  "colors": {
+    "background": {
+      "value": "#f3f3f2",
+      "type": "color"
+    },
+    "foreground": {
+      "value": "#080808",
+      "type": "color"
+    },
+    "primaryLight": {
+      "value": "#FCBCCA",
+      "type": "color"
+    },
+    "primaryLightHover": {
+      "value": "#F698B7",
+      "type": "color"
+    },
+    "primaryLightActive": {
+      "value": "#ED7CAC",
+      "type": "color"
+    },
+    "primaryLightContrast": {
+      "value": "#E2539E",
+      "type": "color"
+    },
+    "primary": {
+      "value": "#E2539E",
+      "type": "color"
+    },
+    "primaryBorder": {
+      "value": "#C23C90",
+      "type": "color"
+    },
+    "primaryBorderHover": {
+      "value": "#A22981",
+      "type": "color"
+    },
+    "primarySolidHover": {
+      "value": "#831A70",
+      "type": "color"
+    },
+    "primarySolidContrast": {
+      "value": "#f3f3f2",
+      "type": "color"
+    },
+    "primaryShadow": {
+      "value": "#C23C90",
+      "type": "color"
+    },
+    "secondaryLight": {
+      "value": "#A6FDF1",
+      "type": "color"
+    },
+    "secondaryLightHover": {
+      "value": "#79F9F2",
+      "type": "color"
+    },
+    "secondaryLightActive": {
+      "value": "#58F0F4",
+      "type": "color"
+    },
+    "secondaryLightContrast": {
+      "value": "#23D8ED",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#23D8ED",
+      "type": "color"
+    },
+    "secondaryBorder": {
+      "value": "#19AACB",
+      "type": "color"
+    },
+    "secondaryBorderHover": {
+      "value": "#1182AA",
+      "type": "color"
+    },
+    "secondarySolidHover": {
+      "value": "#0B5D89",
+      "type": "color"
+    },
+    "secondarySolidContrast": {
+      "value": "#f3f3f2",
+      "type": "color"
+    },
+    "secondaryShadow": {
+      "value": "#19AACB",
+      "type": "color"
+    },
+    "successLight": {
+      "value": "#E2FB9F",
+      "type": "color"
+    },
+    "successLightHover": {
+      "value": "#CAF46E",
+      "type": "color"
+    },
+    "successLightActive": {
+      "value": "#B1EA49",
+      "type": "color"
+    },
+    "successLightContrast": {
+      "value": "#8DDD13",
+      "type": "color"
+    },
+    "success": {
+      "value": "#8DDD13",
+      "type": "color"
+    },
+    "successBorder": {
+      "value": "#71BE0D",
+      "type": "color"
+    },
+    "successBorderHover": {
+      "value": "#579F09",
+      "type": "color"
+    },
+    "successSolidHover": {
+      "value": "#418006",
+      "type": "color"
+    },
+    "successSolidContrast": {
+      "value": "#f3f3f2",
+      "type": "color"
+    },
+    "successShadow": {
+      "value": "#71BE0D",
+      "type": "color"
+    },
+    "warningLight": {
+      "value": "#FAEDAB",
+      "type": "color"
+    },
+    "warningLightHover": {
+      "value": "#F2DD7F",
+      "type": "color"
+    },
+    "warningLightActive": {
+      "value": "#E6C95D",
+      "type": "color"
+    },
+    "warningLightContrast": {
+      "value": "#D6AE2C",
+      "type": "color"
+    },
+    "warning": {
+      "value": "#D6AE2C",
+      "type": "color"
+    },
+    "warningBorder": {
+      "value": "#B89020",
+      "type": "color"
+    },
+    "warningBorderHover": {
+      "value": "#9A7416",
+      "type": "color"
+    },
+    "warningSolidHover": {
+      "value": "#7C5A0E",
+      "type": "color"
+    },
+    "warningSolidContrast": {
+      "value": "#f3f3f2",
+      "type": "color"
+    },
+    "warningShadow": {
+      "value": "#B89020",
+      "type": "color"
+    },
+    "errorLight": {
+      "value": "#FFCCAC",
+      "type": "color"
+    },
+    "errorLightHover": {
+      "value": "#FFAA82",
+      "type": "color"
+    },
+    "errorLightActive": {
+      "value": "#FF8963",
+      "type": "color"
+    },
+    "errorLightContrast": {
+      "value": "#FF5230",
+      "type": "color"
+    },
+    "error": {
+      "value": "#FF5230",
+      "type": "color"
+    },
+    "errorBorder": {
+      "value": "#DB3323",
+      "type": "color"
+    },
+    "errorBorderHover": {
+      "value": "#B71918",
+      "type": "color"
+    },
+    "errorSolidHover": {
+      "value": "#930F18",
+      "type": "color"
+    },
+    "errorSolidContrast": {
+      "value": "#f3f3f2",
+      "type": "color"
+    },
+    "errorShadow": {
+      "value": "#DB3323",
+      "type": "color"
+    },
+    "gradient": {
+      "value": "linear-gradient(112deg, #FFE9D5 -25%, #D6AE2C -10%, #E2539E 80%)",
+      "type": "color"
+    },
+    "link": {
+      "value": "#1182AA",
+      "type": "color"
+    }
+  }
+}
