@@ -19,7 +19,7 @@
   ],
   "prisma": {
     "schema": "workers/prisma/schema.prisma",
-    "seed": "tsx workers/src/seed.ts"
+    "seed": "tsx workers/prisma/seed.ts"
   },
   "scripts": {
     "prepare": "is-ci || husky install",
