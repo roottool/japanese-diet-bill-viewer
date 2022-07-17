@@ -8,19 +8,19 @@ interface HouseOfRepresentativesBillProgressStep {
   AcceptedPreliminaryExaminationByCouncilorsDate: string
   /** 衆議院予備審査議案受理年月日 */
   AcceptedPreliminaryExaminationDate: string
-  /**  */
+  /** 参議院予備付託年月日／参議院予備付託委員会 */
   CouncilorsPreReferenceDateAndCommittee: `${string}／${string}`
-  /**  */
+  /** 参議院付託年月日／参議院付託委員会 */
   CouncilorsReferenceDateAndCommittee: `${string}／${string}`
-  /**  */
+  /** 衆議院審議時賛成会派 */
   FactionInFavorWhileDeliberation: string
-  /**  */
+  /** 衆議院審議時会派態度 */
   FactionalAttitudeWhileDeliberation: string
-  /**  */
+  /** 衆議院審議時反対会派 */
   OppositionFactionWhileDeliberation: string
-  /**  */
+  /** 衆議院予備付託年月日／衆議院予備付託委員会 */
   PreReferenceDateAndCommittee: `${string}／${string}`
-  /**  */
+  /** 衆議院付託年月日／衆議院付託委員会 */
   ReferenceDateAndCommittee: `${string}／${string}`
   /** 番号 */
   billNumber: `${number}`
@@ -32,9 +32,9 @@ interface HouseOfRepresentativesBillProgressStep {
   endOfCouncilorsDeliberationDateAndResult: `${string}／${string}`
   /** 参議院審査終了年月日／参議院審査結果 */
   endOfCouncilorsExaminationDateAndResult: `${string}／${string}`
-  /**  */
+  /** 衆議院審議終了年月日／衆議院審議結果 */
   endOfDeliberationDateAndResult: `${string}／${string}`
-  /**  */
+  /** 衆議院審査終了年月日／衆議院審査結果 */
   endOfExaminationDateAndResult: `${string}／${string}`
   /** 本文情報 */
   fullTextInfo: string
@@ -47,16 +47,6 @@ interface HouseOfRepresentativesBillProgressStep {
   /** 公布年月日／法律番号 */
   promulgationDateAndLawNumber: `${string}／${string}`
 }
-
-// 衆議院予備付託年月日／衆議院予備付託委員会,
-// 衆議院付託年月日／衆議院付託委員会,
-// 衆議院審査終了年月日／衆議院審査結果,
-// 衆議院審議終了年月日／衆議院審議結果,
-// 衆議院審議時会派態度,
-// 衆議院審議時賛成会派,
-// 衆議院審議時反対会派,
-// 参議院予備付託年月日／参議院予備付託委員会,
-// 参議院付託年月日／参議院付託委員会
 
 export interface HouseOfRepresentativesBillSummaryResponse {
   /** 議案提出会派 */
