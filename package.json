@@ -4,7 +4,6 @@
   "description": "This viewer visualizes various data on the Japanese Diet bills.",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@1.22.19",
   "author": {
     "name": "roottool",
     "url": "https://github.com/roottool"
@@ -13,25 +12,74 @@
     "type": "git",
     "url": "https://github.com/roottool/japanese-diet-bill-viewer.git"
   },
-  "workspaces": [
-    "web",
-    "workers"
-  ],
-  "prisma": {
-    "schema": "workers/prisma/schema.prisma",
-    "seed": "tsx workers/prisma/seed.ts"
-  },
   "scripts": {
     "prepare": "is-ci || husky install",
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "test": "turbo run test"
+    "dev": "next dev",
+    "build": "run-s -c build:*",
+    "build:clean": "rimraf .next",
+    "build:next": "next build",
+    "start": "next start",
+    "lint": "run-s -c lint:prettier lint:eslint lint:tsc",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint . --color --ext .js,.ts,.tsx",
+    "lint:tsc": "tsc --noEmit",
+    "fix": "run-s -c fix:prettier fix:eslint",
+    "fix:prettier": "prettier --cache --write .",
+    "fix:eslint": "eslint . --fix --color --cache --ext .js,.ts,.tsx",
+    "token": "npm-run-all -s token:clean -p token:light token:dark",
+    "token:clean": "rimraf style-dictionary/generated",
+    "token:light": "run-s token:light::transform token:light::build",
+    "token:dark": "run-s token:dark::transform token:dark::build",
+    "token:light::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/light.json global,nextuiLight global",
+    "token:light::build": "style-dictionary build --config style-dictionary/light.config.js",
+    "token:dark::transform": "token-transformer style-dictionary/tokens.json style-dictionary/generated/dark.json global,nextuiDark global",
+    "token:dark::build": "style-dictionary build --config style-dictionary/dark.config.js"
+  },
+  "lint-staged": {
+    "*.{js,ts?(x)}": [
+      "prettier --write",
+      "eslint --fix --color"
+    ],
+    "*.{md,json,y?(a)ml}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.9",
+    "@radix-ui/react-icons": "^1.1.1",
+    "axios": "0.27.2",
+    "next": "12.2.2",
+    "next-themes": "0.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-query": "3.39.2"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "12.2.2",
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.2.5",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-sort-destructure-keys": "1.4.0",
+    "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "eslint-plugin-unused-imports": "2.0.0",
     "husky": "8.0.1",
     "is-ci": "3.0.1",
     "lint-staged": "13.0.3",
-    "turbo": "1.3.1"
+    "npm-run-all": "4.1.5",
+    "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "0.0.24",
+    "typescript": "4.7.4"
   }
 }

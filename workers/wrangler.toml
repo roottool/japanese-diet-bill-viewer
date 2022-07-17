@@ -1,6 +1,0 @@
-name = "japanese-diet-bill-workers"
-main = "src/index.ts"
-compatibility_date = "2022-07-16"
-
-[triggers]
-crons = [ "0 6 * * *" ]

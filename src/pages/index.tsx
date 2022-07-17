@@ -1,9 +1,20 @@
 import { Button, Container } from '@nextui-org/react'
+import axios from 'axios'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useQuery } from 'react-query'
+
+const HOUSE_OF_REPRESENTATIVES_BILL_SUMMARY_URL =
+  'https://raw.githubusercontent.com/smartnews-smri/house-of-representatives/main/data/gian_summary.json' as const
 
 const Home: NextPage = () => {
+  const { data } = useQuery(['test'], () =>
+    axios
+      .get(HOUSE_OF_REPRESENTATIVES_BILL_SUMMARY_URL)
+      .then((result) => result.data),
+  )
+
   return (
     <>
       <Head>
@@ -18,9 +29,7 @@ const Home: NextPage = () => {
             Welcome to <a href="https://nextjs.org">Next.js!</a>
           </h1>
 
-          <p>
-            Get started by editing <code>pages/index.tsx</code>
-          </p>
+          <p>{data}</p>
 
           <Button
             shadow
