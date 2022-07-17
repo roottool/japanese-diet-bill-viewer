@@ -1,18 +1,22 @@
-import { Button, Container } from '@nextui-org/react'
-import axios from 'axios'
+import { Button, Container, Loading } from '@nextui-org/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Suspense } from 'react'
 import { useQuery } from 'react-query'
+
+import { get } from '@/utils/fetcher'
 
 const HOUSE_OF_REPRESENTATIVES_BILL_SUMMARY_URL =
   'https://raw.githubusercontent.com/smartnews-smri/house-of-representatives/main/data/gian_summary.json' as const
 
 const Home: NextPage = () => {
-  const { data } = useQuery(['test'], () =>
-    axios
-      .get(HOUSE_OF_REPRESENTATIVES_BILL_SUMMARY_URL)
-      .then((result) => result.data),
+  const { data } = useQuery(
+    ['test'],
+    () => get(HOUSE_OF_REPRESENTATIVES_BILL_SUMMARY_URL),
+    {
+      suspense: true,
+    },
   )
 
   return (
@@ -29,7 +33,9 @@ const Home: NextPage = () => {
             Welcome to <a href="https://nextjs.org">Next.js!</a>
           </h1>
 
-          <p>{data}</p>
+          <Suspense fallback={<Loading />}>
+            <p>{data}</p>
+          </Suspense>
 
           <Button
             shadow
